@@ -1,4 +1,4 @@
-// script.js
+
 document.addEventListener("DOMContentLoaded", () => {
   const counters = document.querySelectorAll(".counter span[data-count]");
   const section = document.querySelector(".counters");
@@ -63,11 +63,11 @@ const hamburger = document.getElementById('hamburger');
 const mobileNav = document.getElementById('mobileNav');
 
 hamburger.addEventListener('click', () => {
-  mobileNav.classList.toggle('active');  // Show/hide mobile menu
-  hamburger.classList.toggle('active');  // Animate hamburger to X
+  mobileNav.classList.toggle('active'); 
+  hamburger.classList.toggle('active');  
 });
 
-// Close mobile nav when a link is clicked
+
 const mobileLinks = mobileNav.querySelectorAll('a');
 mobileLinks.forEach(link => {
   link.addEventListener('click', () => {
